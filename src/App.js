@@ -61,12 +61,14 @@ function App() {
 
   const PanelMouseTracker = WithMousePosition(PanelMouseLogger)
   const PointMouseTracker = WithMousePosition(PointMouseLogger)
+  const date = new Date();
 
   return (
     <div className="App">
         <header>Mouse Point Tracker</header>
         <PanelMouseTracker/>
         <PointMouseTracker/>
+        <footer>Copyright @{date.getFullYear()}</footer>
     </div>
   );
 }
